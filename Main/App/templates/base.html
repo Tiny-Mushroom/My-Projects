@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/normalize.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/bootstrap.css')}}"
+    />
+
+    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}" />
+
+    <title>{%block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/Images/logo" alt="logo">
+                Alice Penrose
+            </a>
+            <ul class="navbar-nav">
+                <li class="navbar-item"><a class="navbar-link" href="#">Portfolio</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    {% block content %}
+    {% endblock %}
+    <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  </body>
+</html>

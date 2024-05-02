@@ -1,3 +1,6 @@
-/env
-/_pycache_
+env
+_pycache_
 /Tutorial
+Clipboard.txt
+.vscode
+bootstrap
