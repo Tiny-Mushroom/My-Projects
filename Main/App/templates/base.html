@@ -10,37 +10,49 @@
     />
     <link
       rel="stylesheet"
-      href="{{url_for('static', filename='css/style.css')}}"
+      href="{{url_for('static', filename='css/bootstrap.css')}}"
     />
     <link
       rel="stylesheet"
-      href="{{url_for('static', filename='css/bootstrap.css')}}"
+      href="{{url_for('static', filename='css/style.css')}}"
     />
 
-    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../static/Images/icon.png" />
 
     <title>{%block title %}{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../static/Images/logo" alt="logo">
-                Alice Penrose
-            </a>
-            <ul class="navbar-nav">
-                <li class="navbar-item"><a class="navbar-link" href="#">Portfolio</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">About Me</a></li>
-            </ul>
-        </div>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark navbar-sticky justify-content-center"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand bodoni-moda-title" href="/">
+          <img class="logo" src="../static/Images/icon.png" alt="logo" />
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link bar" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bar" href="/contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bar" href="/aboutme">About Me</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
+    {% block content %} {% endblock %}
 
-
-
-    {% block content %}
-    {% endblock %}
     <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
   </body>
 </html>
