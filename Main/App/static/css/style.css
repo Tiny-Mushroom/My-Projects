@@ -1,10 +1,18 @@
 .bodoni-moda-title {
   font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: none;
   color: white;
   font-weight: 500;
   font-style: normal;
   font-size: 150%;
+}
+
+.bodoni-moda-title-dark {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: none;
+  color: black;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .brand-name {
@@ -14,17 +22,80 @@
 .bar {
   font-family: "Bodoni Moda", sans-serif;
   color: white;
+  font-optical-sizing: none;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 30px;
 }
 
-.logo{
-    width: 100px;
-    height: auto;
+.cover-txt {
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  font-size: 300%;
+  align-content: center;
 }
 
-body{
-    background-image: url(../Images/background.webp);
+.cover-img {
+  width: 500px;
+  height: 500px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.h1 {
+  font-family: "Bodoni Moda", sans-serif;
+  color: white;
+  font-optical-sizing: none;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 64px;
+}
+.cover {
+  background-color: rgba(255, 255, 255, 0.719);
+}
+
+.backend {
+  margin-top: 10%;
+  background-color: black;
+}
+
+.text-top {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: none;
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.content {
+  background-color: rgba(112, 112, 112, 0.692);
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.text {
+  width: 500px;
+  height: 300px;
+  font-size: 64px;
+  align-content: center;
+}
+
+.img {
+  width: 500px;
+  height: 300px;
+  align-content: center;
+}
+
+body {
+  background-image: url(../Images/background.webp);
 }
